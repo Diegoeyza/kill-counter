@@ -1,0 +1,41 @@
+Kill Counter - total monster kills per player
+=============================================
+
+Shows the SUM of monster kills from a Hunter Profile (the game shows only
+per-monster numbers), plus a per-monster list with hunted / captured counts.
+
+Requirements
+------------
+- Monster Hunter Wilds
+- REFramework for MH Wilds (dinput8.dll installed)
+
+Install
+-------
+Single file mod. Put this file here:
+
+    <game>\reframework\autorun\kill_counter.lua
+
+Default Steam path:
+
+    C:\Program Files (x86)\Steam\steamapps\common\MonsterHunterWilds\
+
+Usage
+-----
+1. Launch the game and open REFramework (Insert).
+2. Menu -> Script Generated UI -> Kill Counter.
+3. Open your own Hunter Profile, or anyone's in the lobby / link party.
+   The total appears as soon as the profile opens. You can close it again.
+4. Press the small triangle on a row to see the per-monster breakdown.
+
+"Always-on window" in the panel shows a compact overlay with the totals
+while you play.
+
+Notes
+-----
+- Read-only. The mod never writes anything to the game or to your save.
+- The game keeps a Hunter Profile in memory only while it is on screen,
+  which is why other players have to have their profile opened once.
+- The game exposes no hunter display name on profiles, so rows are labelled
+  by Hunter Rank and Palico name.
+- Reload: REFramework menu -> Script -> Reset scripts (or restart the game).
+- No hooks beyond one read-only constructor capture; nothing runs at load.

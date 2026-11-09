@@ -1,0 +1,2 @@
+# Built release bundles (recreate with ./package.sh)
+dist/
